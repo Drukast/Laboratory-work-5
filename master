@@ -1,0 +1,3 @@
+var M, N, matrix = [], max = 0, rows = [];
+M = Number(prompt("Введите Кол-во Строк", ""));
+N = Number(prompt("Введите Кол-во столбцов", ""));
