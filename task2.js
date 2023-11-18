@@ -31,4 +31,9 @@ if ((!(isNaN(M)) && (M % 1 == 0) && (M > 0)) && (!(isNaN(N)) && (N % 1 == 0) && 
             }
         }
     }
+    for (var i in matrix) {
+        alert(`Строка ${Number(i) + 1}: ${matrix[i]}`);
+    }
+} else {
+    alert('Введено неверное значение размера');
 }
