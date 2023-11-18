@@ -9,4 +9,14 @@ if ((!(isNaN(M)) && (M % 1 == 0) && (M > 0)) && (!(isNaN(N)) && (N % 1 == 0) && 
         }
         matrix.push(submatrix);
     }
+    for (var i in matrix) {
+        i = Number(i);
+        for (var j in matrix) {
+            j = Number(j);
+            if (matrix[i][j] <= min) {
+                min = matrix[i][j];
+                col = j
+            }
+        }
+    }
 }
