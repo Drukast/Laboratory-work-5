@@ -12,4 +12,20 @@ if ((!(isNaN(M)) && (M % 1 == 0) && (M > 0)) && (!(isNaN(N)) && (N % 1 == 0) && 
     for (var i in matrix) {
         alert(`Строка ${Number(i) + 1}: ${matrix[i]}`);
     }
+    for (var i in matrix) {
+        i = Number(i);
+        for (var j in matrix[i]) {
+            j = Number(j);
+            if (matrix[i][j] > max) {
+                rows = [];
+                max = matrix[i][j];
+                rows.push(i + 1);
+            } else if (matrix[i][j] == max) {
+                rows.push(i + 1);
+            }
+        }
+    }
+    alert(`Максимальный элемент содержится в строках: ${rows}`);
+} else {
+    alert('Введено неверное значение размера');
 }
